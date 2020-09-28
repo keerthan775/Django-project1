@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>update</title>
+  </head>
+  <body>
+    {% block content %}
+    <form action="dbupdate" method="GET">
+      <label>id:</label><input type="number" name="id" /> <label>usn:</label
+      ><input type="text" name="usn" />
+      <input type="submit" />
+    </form>
+    {% endblock %}
+  </body>
+</html>

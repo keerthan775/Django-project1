@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>student database</title>
+  </head>
+  <body>
+    {% block content %}
+    <form action="dbinsert" method="GET">
+      <label>Name:</label><input type="text" name="name" /> <label>Usn:</label
+      ><input type="text" name="usn" />
+      <input type="submit" />
+    </form>
+    {% endblock %}
+  </body>
+</html>
